@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script type="text/javascript" src="js/scripts.js"></script>
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <title>Reto 2 - MisiónTIC 2022</title>
+</head>
+<body onload="listarDatosCliente()">
+    <h1 class="titulo">Información de Cliente</h1>
+    
+    <section>
+        <article>
+            <div class="frm">
+                Id: <input type="number" id="idCliente" class="frm-cliente" style="width: 100px;" disabled="disabled"><br>
+                Nombre: <input type="text" id="nombreCliente" class="frm-cliente" style="width: 250px;" disabled="disabled"><br>
+                Email: <input type="text" id="emailCliente" class="frm-cliente" style="width: 250px;" disabled="disabled"><br>
+                Edad: <input type="text" id="edadCliente" class="frm-cliente" style="width: 50px;" disabled="disabled"><br>
+                <button class="btn" id="btnInsertar" onclick="procesarDatosCliente()">Insertar</button>
+                <button class="btn" id="btnModificar" onclick="procesarDatosCliente()">Modificar</button>
+                <button class="btn" id="btnGuardar" onclick="procesarDatosCliente()">Guardar</button>
+                <a href="index.html"><input type="button" value="Inicio" class="btn" id="btnInicio"></a>     
+            </div>
+            <div id="listaClientes"></div>				
+        </article>
+    </section>
+    <footer>
+        <h2>Mision TIC 2022</h2>
+        <p>Universidad Sergio Arboleda</p>
+    </footer>
+</body>
+</html>
